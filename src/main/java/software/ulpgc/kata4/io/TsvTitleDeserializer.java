@@ -10,6 +10,7 @@ public class TsvTitleDeserializer implements TitleDeserializer{
 
     private Title deserialize(String[] fields) {
         return new Title(
+                fields[0],
                 fields[3],
                 toInt(fields[5]),
                 toInt(fields[7])
